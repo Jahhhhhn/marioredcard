@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MarioRedCard – Kickbase-Aufstellungsberater</title>
+  <meta name="description" content="Berechnet die beste Startelf für den nächsten Kickbase-Spieltag – für Windows und Mac.">
+  <link rel="icon" href="icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #131417; --surface: #1b1c20; --surface-2: #232529; --border: #2c2e34;
+      --text: #f4f5f6; --muted: #9a9b9f; --green: #20d587; --orange: #ff4600;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font: 15px/1.6 "Poppins", system-ui, "Segoe UI", sans-serif;
+    }
+    .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
+    header { padding: 56px 0 32px; }
+    .brand { display: flex; align-items: center; gap: 16px; }
+    .card {
+      width: 30px; height: 42px; border-radius: 6px; background: var(--orange); transform: rotate(-10deg);
+      box-shadow: 0 4px 18px rgba(255, 70, 0, .45); flex: none;
+    }
+    h1 { font-size: 34px; line-height: 1.15; margin: 0; font-weight: 700; }
+    .sub { color: var(--muted); margin: 2px 0 0; }
+    .lead { font-size: 18px; max-width: 640px; margin: 28px 0 0; }
+    .version { display: inline-block; margin-top: 18px; padding: 3px 12px; border-radius: 99px; font-size: 12px;
+      font-weight: 600; color: var(--green); background: rgba(32, 213, 135, .13); }
+    h2 { font-size: 14px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 40px 0 14px; }
+    .downloads { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 14px; }
+    .dl {
+      display: block; padding: 20px 22px; border-radius: 16px; background: var(--surface);
+      border: 1px solid var(--border); color: inherit; text-decoration: none; transition: border-color .15s, transform .15s;
+    }
+    .dl:hover, .dl:focus-visible { border-color: var(--green); transform: translateY(-2px); outline: none; }
+    .dl strong { display: block; font-size: 17px; }
+    .dl span { color: var(--muted); font-size: 13px; }
+    .dl .btn { display: inline-block; margin-top: 14px; padding: 8px 18px; border-radius: 99px; background: var(--green);
+      color: #0b1a12; font-weight: 600; font-size: 14px; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 14px; }
+    @media (max-width: 380px) { .features { grid-template-columns: 1fr; } }
+    .feature { padding: 18px 20px; border-radius: 14px; background: var(--surface); border: 1px solid var(--border); }
+    .feature b { display: block; margin-bottom: 4px; }
+    .feature p { margin: 0; color: var(--muted); font-size: 14px; }
+    ol { padding-left: 20px; margin: 0; }
+    li { margin: 6px 0; }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 14px; }
+    .step { padding: 18px 20px; border-radius: 14px; background: var(--surface-2); font-size: 14px; }
+    .step b { display: block; margin-bottom: 6px; }
+    code { overflow-wrap: anywhere; background: var(--surface-2); padding: 1px 6px; border-radius: 6px; font-size: 13px; }
+    footer { margin: 56px 0 40px; color: var(--muted); font-size: 12px; border-top: 1px solid var(--border); padding-top: 18px; }
+    @media (max-width: 520px) { h1 { font-size: 27px; } header { padding-top: 36px; } }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="card" aria-hidden="true"></div>
+      <div>
+        <h1>MarioRedCard</h1>
+        <p class="sub">Kickbase-Aufstellungsberater</p>
+      </div>
+    </div>
+    <p class="lead">Berechnet die beste Startelf für den nächsten Spieltag – mit Punkteprognose, Risiko-Stufen,
+      Verkaufsplan und Marktwert-Prognose. Anmeldung mit deinem eigenen Kickbase-Konto.</p>
+    <span class="version" id="version">Aktuelle Version wird geladen …</span>
+  </header>
+
+  <h2>Herunterladen</h2>
+  <div class="downloads">
+    <a class="dl" href="https://github.com/Jahhhhhn/marioredcard/releases/latest/download/MarioRedCard-Windows.zip">
+      <strong>Windows</strong><span>Windows 10 und 11 · ca. 70 MB</span><br><span class="btn">Download</span>
+    </a>
+    <a class="dl" href="https://github.com/Jahhhhhn/marioredcard/releases/latest/download/MarioRedCard-macOS-AppleSilicon.zip">
+      <strong>Mac mit Apple-Chip</strong><span>M1, M2, M3, M4 … · ca. 70 MB</span><br><span class="btn">Download</span>
+    </a>
+    <a class="dl" href="https://github.com/Jahhhhhn/marioredcard/releases/latest/download/MarioRedCard-macOS-Intel.zip">
+      <strong>Mac mit Intel-Chip</strong><span>ältere Macs bis ca. 2020 · ca. 65 MB</span><br><span class="btn">Download</span>
+    </a>
+  </div>
+  <p class="sub" style="margin-top:10px">Welchen Chip dein Mac hat: Apple-Menü → „Über diesen Mac“. Java ist schon dabei,
+    du musst nichts installieren. Updates kommen danach automatisch beim Start.</p>
+
+  <h2>Installieren</h2>
+  <div class="steps">
+    <div class="step">
+      <b>Windows</b>
+      <ol>
+        <li>Zip entpacken (Rechtsklick → „Alle extrahieren“).</li>
+        <li><code>MarioRedCard\MarioRedCard.exe</code> starten.</li>
+        <li>Meldet Windows „Der Computer wurde geschützt“: „Weitere Informationen“ → „Trotzdem ausführen“.</li>
+      </ol>
+    </div>
+    <div class="step">
+      <b>Mac</b>
+      <ol>
+        <li>Zip doppelklicken, <code>MarioRedCard.app</code> in „Programme“ ziehen.</li>
+        <li>Einmal öffnen – macOS blockiert die App beim ersten Mal.</li>
+        <li>Systemeinstellungen → Datenschutz &amp; Sicherheit → „Dennoch öffnen“.</li>
+      </ol>
+    </div>
+  </div>
+
+  <h2>Was die App kann</h2>
+  <div class="features">
+    <div class="feature"><b>Beste Startelf</b><p>Exakte Optimierung über alle Formationen – aus deinem Kader oder in Arena-Ligen aus allen Spielern.</p></div>
+    <div class="feature"><b>Punkteprognose</b><p>KI-Modell mit Startelf-Chancen (Ligainsider), Wettquoten und Spielerform.</p></div>
+    <div class="feature"><b>Risiko-Stufen</b><p>Von „Sicher“ (konstante Spieler) bis „Riskant“ (Torjäger und Vorlagengeber).</p></div>
+    <div class="feature"><b>Kontostand im Blick</b><p>Verkaufsplan, falls du vor dem Spieltag im Minus bist, und Marktwert-Prognose.</p></div>
+  </div>
+
+  <footer>
+    MarioRedCard ist ein privates Hobbyprojekt und steht in keiner Verbindung zu Kickbase.
+    Deine Zugangsdaten gehen nur an Kickbase und werden – falls gewünscht – nur auf deinem Computer gespeichert.
+  </footer>
+</div>
+<script>
+  // Aktuelle Version aus der Update-Liste der App anzeigen
+  fetch("updates/latest.json", {cache: "no-store"})
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(j => { document.getElementById("version").textContent = "Version " + j.version; })
+    .catch(() => { document.getElementById("version").textContent = "Windows · macOS"; });
+</script>
+</body>
+</html>
