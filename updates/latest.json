@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "version": "1.0.1",
+  "mainClass": "de.marioredcard.Launcher",
+  "jvmArgs": ["-Xmx3g", "-Dfile.encoding=UTF-8"],
+  "platforms": {
+    "windows": [
+      {"name": "MarioRedCard.jar", "sha256": "c50cf8dc582df0019812f91ad4afcb28c657c935c69679265adccbbd9be59e96", "size": 994063},
+      {"name": "atlantafx-base-2.0.1.jar", "sha256": "8e292909c6bd6be368690995e94114b7580f31d9554ccd672b805d5c02125422", "size": 710348},
+      {"name": "jackson-annotations-2.18.2.jar", "sha256": "581bd61000ef7648943f781ca05689e56d03f6052748365a8e2b3a9b5d3fa32f", "size": 78494},
+      {"name": "jackson-core-2.18.2.jar", "sha256": "d8054ae7c0d1c2d2f55d28e46026ebe5892881f3fab5f439233184381c3b4a1f", "size": 597807},
+      {"name": "jackson-databind-2.18.2.jar", "sha256": "4b364e6850dc89172fcf1d4dd26b8ff5488eda44ff4657e22dd265203dd5ab3c", "size": 1658755},
+      {"name": "jackson-datatype-jsr310-2.18.2.jar", "sha256": "e2d202d4606e23aeaf8a5a9632db06f5fefd5b63d251c3f503f9faaa78530e5c", "size": 132690},
+      {"name": "lightgbm4j-4.4.0-1.jar", "sha256": "40d039fa1861395c9d3e830cb151d7aaccedb47686fb9a37821d45d8df60bc41", "size": 10559705},
+      {"name": "slf4j-api-2.0.12.jar", "sha256": "a79502b8abdfbd722846a27691226a4088682d6d35654f9b80e2a9ccacf7ed47", "size": 68115},
+      {"name": "javafx-base-21.0.5-win.jar", "sha256": "4e9de66524a39fa59ee2cd4952270900bc9fe495b28477435efa08144de1d206", "size": 753974},
+      {"name": "javafx-controls-21.0.5-win.jar", "sha256": "c689de189abaa839eaf628d4b34aa176f6661e0d62ca918cb4af7544172e6a60", "size": 2585171},
+      {"name": "javafx-graphics-21.0.5-win.jar", "sha256": "0c5ce5a4f27be1d0c898c29fae86356f5ccf78401cc6bd243fc146f4a61dff74", "size": 5942323}
+    ],
+    "mac-aarch64": [
+      {"name": "MarioRedCard.jar", "sha256": "c50cf8dc582df0019812f91ad4afcb28c657c935c69679265adccbbd9be59e96", "size": 994063},
+      {"name": "atlantafx-base-2.0.1.jar", "sha256": "8e292909c6bd6be368690995e94114b7580f31d9554ccd672b805d5c02125422", "size": 710348},
+      {"name": "jackson-annotations-2.18.2.jar", "sha256": "581bd61000ef7648943f781ca05689e56d03f6052748365a8e2b3a9b5d3fa32f", "size": 78494},
+      {"name": "jackson-core-2.18.2.jar", "sha256": "d8054ae7c0d1c2d2f55d28e46026ebe5892881f3fab5f439233184381c3b4a1f", "size": 597807},
+      {"name": "jackson-databind-2.18.2.jar", "sha256": "4b364e6850dc89172fcf1d4dd26b8ff5488eda44ff4657e22dd265203dd5ab3c", "size": 1658755},
+      {"name": "jackson-datatype-jsr310-2.18.2.jar", "sha256": "e2d202d4606e23aeaf8a5a9632db06f5fefd5b63d251c3f503f9faaa78530e5c", "size": 132690},
+      {"name": "lightgbm4j-4.4.0-1.jar", "sha256": "40d039fa1861395c9d3e830cb151d7aaccedb47686fb9a37821d45d8df60bc41", "size": 10559705},
+      {"name": "slf4j-api-2.0.12.jar", "sha256": "a79502b8abdfbd722846a27691226a4088682d6d35654f9b80e2a9ccacf7ed47", "size": 68115},
+      {"name": "javafx-base-21.0.5-mac-aarch64.jar", "sha256": "bb8c2ce3832f677738accf4ab093947772a329381754da9ff5c3cf5afa9da269", "size": 753975},
+      {"name": "javafx-controls-21.0.5-mac-aarch64.jar", "sha256": "944b033205e756e7494c9f81fb7fa2637bbb0c9789dd8a039ea0633e318fafef", "size": 2585197},
+      {"name": "javafx-graphics-21.0.5-mac-aarch64.jar", "sha256": "ed823c061ce56bc58a18b202a1802a9e66b3a436ddd8a872119498a319e30583", "size": 4840128}
+    ],
+    "mac-x64": [
+      {"name": "MarioRedCard.jar", "sha256": "c50cf8dc582df0019812f91ad4afcb28c657c935c69679265adccbbd9be59e96", "size": 994063},
+      {"name": "atlantafx-base-2.0.1.jar", "sha256": "8e292909c6bd6be368690995e94114b7580f31d9554ccd672b805d5c02125422", "size": 710348},
+      {"name": "jackson-annotations-2.18.2.jar", "sha256": "581bd61000ef7648943f781ca05689e56d03f6052748365a8e2b3a9b5d3fa32f", "size": 78494},
+      {"name": "jackson-core-2.18.2.jar", "sha256": "d8054ae7c0d1c2d2f55d28e46026ebe5892881f3fab5f439233184381c3b4a1f", "size": 597807},
+      {"name": "jackson-databind-2.18.2.jar", "sha256": "4b364e6850dc89172fcf1d4dd26b8ff5488eda44ff4657e22dd265203dd5ab3c", "size": 1658755},
+      {"name": "jackson-datatype-jsr310-2.18.2.jar", "sha256": "e2d202d4606e23aeaf8a5a9632db06f5fefd5b63d251c3f503f9faaa78530e5c", "size": 132690},
+      {"name": "lightgbm4j-4.4.0-1.jar", "sha256": "40d039fa1861395c9d3e830cb151d7aaccedb47686fb9a37821d45d8df60bc41", "size": 10559705},
+      {"name": "slf4j-api-2.0.12.jar", "sha256": "a79502b8abdfbd722846a27691226a4088682d6d35654f9b80e2a9ccacf7ed47", "size": 68115},
+      {"name": "javafx-base-21.0.5-mac.jar", "sha256": "dc63870cf5f2648d74833fcfb456b881d0318fedec73c191ed8f32c00077cff9", "size": 753976},
+      {"name": "javafx-controls-21.0.5-mac.jar", "sha256": "8ea63dd423a47e16ebbbbaee876eeb91f30260fa1b3836f862af0e85777daa28", "size": 2585182},
+      {"name": "javafx-graphics-21.0.5-mac.jar", "sha256": "67b38ba3334c91f2b8b8585ea8d025725d8db6a1ef28bf4b78f46c56cb9ddca9", "size": 4879433}
+    ],
+    "linux-x64": [
+      {"name": "MarioRedCard.jar", "sha256": "c50cf8dc582df0019812f91ad4afcb28c657c935c69679265adccbbd9be59e96", "size": 994063},
+      {"name": "atlantafx-base-2.0.1.jar", "sha256": "8e292909c6bd6be368690995e94114b7580f31d9554ccd672b805d5c02125422", "size": 710348},
+      {"name": "jackson-annotations-2.18.2.jar", "sha256": "581bd61000ef7648943f781ca05689e56d03f6052748365a8e2b3a9b5d3fa32f", "size": 78494},
+      {"name": "jackson-core-2.18.2.jar", "sha256": "d8054ae7c0d1c2d2f55d28e46026ebe5892881f3fab5f439233184381c3b4a1f", "size": 597807},
+      {"name": "jackson-databind-2.18.2.jar", "sha256": "4b364e6850dc89172fcf1d4dd26b8ff5488eda44ff4657e22dd265203dd5ab3c", "size": 1658755},
+      {"name": "jackson-datatype-jsr310-2.18.2.jar", "sha256": "e2d202d4606e23aeaf8a5a9632db06f5fefd5b63d251c3f503f9faaa78530e5c", "size": 132690},
+      {"name": "lightgbm4j-4.4.0-1.jar", "sha256": "40d039fa1861395c9d3e830cb151d7aaccedb47686fb9a37821d45d8df60bc41", "size": 10559705},
+      {"name": "slf4j-api-2.0.12.jar", "sha256": "a79502b8abdfbd722846a27691226a4088682d6d35654f9b80e2a9ccacf7ed47", "size": 68115},
+      {"name": "javafx-base-21.0.5-linux.jar", "sha256": "c0e046db22a4052f4eb0050b32bcd95930c98991a945769ffdf6940e4535ee97", "size": 753983},
+      {"name": "javafx-controls-21.0.5-linux.jar", "sha256": "670f05d2b190f94f14cecbfce8e46117b99ecd76f22a487b4fbdaf881acb598c", "size": 2585211},
+      {"name": "javafx-graphics-21.0.5-linux.jar", "sha256": "a566893c2a74b47184bd75a0434edf489d83ab5a232df7c5216594beed34151a", "size": 4697444}
+    ]
+  }
+}
