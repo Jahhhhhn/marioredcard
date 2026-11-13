@@ -1,11 +1,11 @@
 {
   "format": 1,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "mainClass": "de.marioredcard.Launcher",
   "jvmArgs": ["-Xmx3g", "-Dfile.encoding=UTF-8"],
   "platforms": {
     "windows": [
-      {"name": "MarioRedCard.jar", "sha256": "c50cf8dc582df0019812f91ad4afcb28c657c935c69679265adccbbd9be59e96", "size": 994063},
+      {"name": "MarioRedCard.jar", "sha256": "8383f2e2c650a6cc8f1652df80e208d9d3e8e29df6de00830175779019e98a22", "size": 1002424},
       {"name": "atlantafx-base-2.0.1.jar", "sha256": "8e292909c6bd6be368690995e94114b7580f31d9554ccd672b805d5c02125422", "size": 710348},
       {"name": "jackson-annotations-2.18.2.jar", "sha256": "581bd61000ef7648943f781ca05689e56d03f6052748365a8e2b3a9b5d3fa32f", "size": 78494},
       {"name": "jackson-core-2.18.2.jar", "sha256": "d8054ae7c0d1c2d2f55d28e46026ebe5892881f3fab5f439233184381c3b4a1f", "size": 597807},
@@ -18,7 +18,7 @@
       {"name": "javafx-graphics-21.0.5-win.jar", "sha256": "0c5ce5a4f27be1d0c898c29fae86356f5ccf78401cc6bd243fc146f4a61dff74", "size": 5942323}
     ],
     "mac-aarch64": [
-      {"name": "MarioRedCard.jar", "sha256": "c50cf8dc582df0019812f91ad4afcb28c657c935c69679265adccbbd9be59e96", "size": 994063},
+      {"name": "MarioRedCard.jar", "sha256": "8383f2e2c650a6cc8f1652df80e208d9d3e8e29df6de00830175779019e98a22", "size": 1002424},
       {"name": "atlantafx-base-2.0.1.jar", "sha256": "8e292909c6bd6be368690995e94114b7580f31d9554ccd672b805d5c02125422", "size": 710348},
       {"name": "jackson-annotations-2.18.2.jar", "sha256": "581bd61000ef7648943f781ca05689e56d03f6052748365a8e2b3a9b5d3fa32f", "size": 78494},
       {"name": "jackson-core-2.18.2.jar", "sha256": "d8054ae7c0d1c2d2f55d28e46026ebe5892881f3fab5f439233184381c3b4a1f", "size": 597807},
@@ -31,7 +31,7 @@
       {"name": "javafx-graphics-21.0.5-mac-aarch64.jar", "sha256": "ed823c061ce56bc58a18b202a1802a9e66b3a436ddd8a872119498a319e30583", "size": 4840128}
     ],
     "mac-x64": [
-      {"name": "MarioRedCard.jar", "sha256": "c50cf8dc582df0019812f91ad4afcb28c657c935c69679265adccbbd9be59e96", "size": 994063},
+      {"name": "MarioRedCard.jar", "sha256": "8383f2e2c650a6cc8f1652df80e208d9d3e8e29df6de00830175779019e98a22", "size": 1002424},
       {"name": "atlantafx-base-2.0.1.jar", "sha256": "8e292909c6bd6be368690995e94114b7580f31d9554ccd672b805d5c02125422", "size": 710348},
       {"name": "jackson-annotations-2.18.2.jar", "sha256": "581bd61000ef7648943f781ca05689e56d03f6052748365a8e2b3a9b5d3fa32f", "size": 78494},
       {"name": "jackson-core-2.18.2.jar", "sha256": "d8054ae7c0d1c2d2f55d28e46026ebe5892881f3fab5f439233184381c3b4a1f", "size": 597807},
@@ -44,7 +44,7 @@
       {"name": "javafx-graphics-21.0.5-mac.jar", "sha256": "67b38ba3334c91f2b8b8585ea8d025725d8db6a1ef28bf4b78f46c56cb9ddca9", "size": 4879433}
     ],
     "linux-x64": [
-      {"name": "MarioRedCard.jar", "sha256": "c50cf8dc582df0019812f91ad4afcb28c657c935c69679265adccbbd9be59e96", "size": 994063},
+      {"name": "MarioRedCard.jar", "sha256": "8383f2e2c650a6cc8f1652df80e208d9d3e8e29df6de00830175779019e98a22", "size": 1002424},
       {"name": "atlantafx-base-2.0.1.jar", "sha256": "8e292909c6bd6be368690995e94114b7580f31d9554ccd672b805d5c02125422", "size": 710348},
       {"name": "jackson-annotations-2.18.2.jar", "sha256": "581bd61000ef7648943f781ca05689e56d03f6052748365a8e2b3a9b5d3fa32f", "size": 78494},
       {"name": "jackson-core-2.18.2.jar", "sha256": "d8054ae7c0d1c2d2f55d28e46026ebe5892881f3fab5f439233184381c3b4a1f", "size": 597807},
